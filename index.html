@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 900;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body {
+            background-color:  #fff;
+            margin: 2rem;
+        }
+        .footer {
+             position: absolute;
+             bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <hr>
+    <form action="/" method="POST">
+        <div class="form-floating mb-3">
+            <input id="floatingInput" class="form-control" type="text" name="cityName" placeholder="city">
+            <label for="floatingInput">Enter City Name</label>
+            <br>
+            <button class="btn btn-outline-primary btn-lg" type="submit">Search</button>
+        </div>
+    </form>
+
+    
+    <hr>
+    
+    <div class="jumbotron footer">
+        <h6>Website Hosted using Heroku</h6>            
+        <h6>Using OpenWeatherMap API  </h6>
+        <p class="lead">Developed by Rizul Bhardwaj</p>
+
+      </div>
+
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
